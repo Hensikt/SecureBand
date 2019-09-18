@@ -1,0 +1,390 @@
+/* ------------------Generale css------------------ */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e3dac9;
+}
+
+body a {
+    text-decoration: none;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav a {
+    color: black;
+}
+
+/* ------------------ classes ------------------ */
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    margin-top: -1.1em;
+}
+
+.container-nav {
+    margin: 0;
+}
+
+.intro {
+    display: grid;
+    grid-template-rows: 30vh 30vh 30vh;
+    height: auto;
+    width: 100vw;
+    background: url("../images/Painting.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.tekst {
+    grid-row: 3/3;
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+    margin: 1em auto 1em 1em; /* top, right, bottom, left */
+    background-color: #fffcf0;
+}
+
+.tekst h1, p {
+    padding: auto;
+    margin-left: .4em;
+}
+
+.About-Us {
+    display: grid;
+    height: 35vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr auto;
+    background: url("../images/About.svg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.About-Us h2 {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    margin: 1em .5em .5em .5em;
+}
+
+.About-Us p {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    margin: 4em auto auto 1em;
+}
+
+.CYP {
+    width: 100vw;
+    height: 50vh;
+    background-color: #e3dac9;
+}
+
+/* ------------------Css Contact------------------ */
+.Ab-contact {
+    display: grid;
+    border: black 1px solid;
+    float: right;
+    width: 100vw;
+    height: 250px;
+    background: url("../images/Contact.png") no-repeat center center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.Contact-container {
+    margin: auto 3em;
+    grid-column: 3/3;
+}
+
+.About-Us {
+    border: black 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.description {
+    grid-column: 1/1;
+}
+
+/* ----------------------------------------------- */
+
+/* ------------------Css Navbar------------------ */
+.navbar {
+    background-color: #dfd8bf;
+}
+
+.navbar-nav {
+    text-align: right;
+    padding-bottom: .3em;
+    font-size: 18px;
+}
+
+.navbar-nav a {
+    padding-right: 1em;
+}
+
+.navbar-nav li {
+    padding: .3em;
+}
+
+.navbar-nav li:hover {
+    background-color: silver;
+}
+
+.active {
+    background-color: silver;
+    border-bottom: 1px solid red;
+}
+
+.navbar-input {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.navbar-img {
+    margin: auto;
+}
+
+.navbar-items {
+}
+
+.nav-item {
+}
+
+.navbar-search {
+}
+
+.nav-link {
+}
+
+.login {
+}
+
+/*----------------------------------------------*/
+/* ------ CSS Slideshow  ------ */
+.Slideshow-container img {
+    grid-column: 2/2;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+/* Slideshow container */
+.Slideshow-container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 38vh auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    grid-row: 1/1;
+}
+
+.desc {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    text-align: center;
+}
+
+.desc {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* ------------------Css Pantheon nav------------------ */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #DFD8BF;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    width: 250px;
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    text-align: center;
+}
+
+/* The side content div */
+.content {
+    grid-row: 2/3;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    margin-right: 250px;
+    padding: 20px;
+}
+
+/* ---------------------------------------------------- */
+/* ------------------Css Pantheon container------------------ */
+.background-image {
+    background: url("../images/About.svg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: .5px solid black;
+    border-bottom-right-radius: 400px 190px;
+    border-top-right-radius: 400px 190px;
+    margin-bottom: 5px;
+}
+
+.Pantheon-image {
+    display: grid;
+    width: 140px;
+    height: auto;
+    margin: auto;
+    background-color: #DFD8BF;
+
+}
+.Pantheon img{
+    width: 140px;
+    height: 140px;
+}
+
+.Pantheon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 7em);
+    grid-gap: 9px;
+    background-color: beige;
+    border: 1px black solid;
+    padding-right: 1em;
+}
+.Pantheon h3{
+    grid-column: 1/2;
+    text-align: center;
+}
+.Pantheon p{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+
+/* ---------------------------------------------------------- */
+/* --------------------------------------------- */
+/* ------------------id's------------------ */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
