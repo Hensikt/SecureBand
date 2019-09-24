@@ -5,12 +5,12 @@ alleen is deze code met behulp van de K_SEC lessen veiliger dan de orginele code
 Klik hier voor de [oude] pagina.  
 Klik hier voor de [nieuwe] pagina.
 
-Het verslag dat samenging met deze opdrachten. [Eigen verslag]   
+Het verslag dat samenging met deze opdrachten. [Eigen verslag]   <- in doc   
 Het verslag van iemand die ook mijn pagina heeft bekeken. [Ander verslag]  
-[Userstories]
+[Userstories] <- in Doc
 
 [oude]: http://27728.hosts2.ma-cloud.nl/ma/bewijzenmap/MyBand-Project/public/
 [nieuwe]: #
-[Eigen verslag]: doc/verslag.pdf
-[Ander verslag]: doc/
-[Userstories]: doc/User-Stories-SurcureBand.md
+[Eigen verslag]: <doc/verslag.pdf>
+[Ander verslag]: <doc/>
+[Userstories]: <doc/User-Stories-SurcureBand.md>
