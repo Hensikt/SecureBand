@@ -11,6 +11,6 @@ Het verslag van iemand die ook mijn pagina heeft bekeken. [Ander verslag]
 
 [oude]: http://27728.hosts2.ma-cloud.nl/ma/bewijzenmap/MyBand-Project/public/
 [nieuwe]: #
-[Eigen verslag]: doc/verslag.pdf
-[Ander verslag]: doc/
-[Userstories]: doc/User-Stories-SurcureBand.md
+[Eigen verslag]: <doc/verslag.pdf>
+[Ander verslag]: <doc/>
+[Userstories]: <doc/User-Stories-SurcureBand.md>
