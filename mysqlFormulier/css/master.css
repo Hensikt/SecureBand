@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+label{
+    display: block;
+}
+
+.formulier{
+    margin: auto;
+    border: 3px solid black;
+}
