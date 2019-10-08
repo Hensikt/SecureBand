@@ -1,11 +1,94 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
     margin: 0;
-}
-label{
-    display: block;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-.formulier{
-    margin: auto;
-    border: 3px solid black;
+body{
+    /*background: url("");*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+    height: 100vh;
+}
+span {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contactForm{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.8);
+    padding: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.13);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.13);
+    box-shadow: 0 0 10px rgba(0,0,0,.13);
+}
+
+.contactForm__inputFields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.contactForm__inputFields,
+.contactForm__extraInputFields{
+    width: 48%;
+}
+
+.contactForm__inputFields .input,
+.contactForm__extraInputFields .input{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    width: 100%;
+}
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+    .contactForm{
+        flex-direction: column;
+    }
+    .contactForm__inputFields,
+    .contactForm__extraInputFields{
+        width: 100%;
+    }
 }
