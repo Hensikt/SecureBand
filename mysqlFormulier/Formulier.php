@@ -16,37 +16,24 @@
 </head>
 <body>
 <div class="wrapper">
+    <form action="get.php" method="post">
     <div class="contactForm">
         <div class="contactForm__inputFields">
-            <input type="text" class="input" placeholder="Voornaam">
-            <input type="text" class="input" placeholder="Achternaam">
-            <input type="text" class="input" placeholder="Straat">
-            <input type="text" class="input" placeholder="Huisnummer">
-            <span><input type="text" class="input next" placeholder="Postcode"> <input type="text" class="input next" placeholder="nummer"></span>
-            <input type="text" class="input" placeholder="Woonplaats">
-
+            <input required type="text"   maxlength="25"  class="input"      name="Voornaam"   placeholder="Voornaam *">
+            <input required type="text"   maxlength="128" class="input"      name="Achternaam" placeholder="Achternaam *">
+            <input required type="text"   maxlength="48"  class="input"      name="Straat"     placeholder="Straat *">
+            <input required type="number" maxlength="11"  class="input"      name="Huisnummer" placeholder="Huisnummer *">
+      <span><input required type="number" maxlength="6"  class="input next"  name="Postcode1"  placeholder="Postcode *">
+            <input required type="text"                   class="input next" name="Postcode2"  placeholder="Pcletters *"></span>
+            <input required type="text"   maxlength="24"    class="input"    name="Woonplaats" placeholder="Woonplaats *">
         </div>
         <div class="contactForm__extraInputFields">
-            <input type="text" class="input" placeholder="Email Address">
-            <input type="text" class="input" placeholder="Telefoonnummer">
-            <input type="submit" class="btn" placeholder="Send">
+            <input required type="text"   maxlength="125" class="input"      name="Email"          placeholder="Email Address *">
+            <input required type="number" maxlength="11"  class="input"      name="Telefoonnummer" placeholder="Telefoonnummer *">
+            <input required type="submit"                 class="btn"        name="Send"           placeholder="Send">
         </div>
-
     </div>
-</div>
+    </form>
+    </div>
 </body>
 </html>
-
-<!--<div class="formulier">-->
-<!--    <form action="">-->
-<!--        <label>Voornaam:       <input type="text"></label>-->
-<!--        <label>Achternaam:     <input type="text"></label>-->
-<!--        <label>Straat:         <input type="text"></label>-->
-<!--        <label>Huisnmr:        <input type="number"></label>-->
-<!--        <label>Postcode:       <input type="number"> <input type="text"></label>-->
-<!--        <label>Woonplaats:     <input type="text"></label>-->
-<!--        <label>E-mail:         <input type="text"></label>-->
-<!--        <label>Telefoonnummer: <input type="number"></label>-->
-<!--        <input type="submit">-->
-<!--    </form>-->
-<!--</div>-->

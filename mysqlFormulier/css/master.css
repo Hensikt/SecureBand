@@ -11,14 +11,18 @@
 }
 
 body{
-    /*background: url("");*/
-    /*-webkit-background-size: cover;*/
-    /*background-size: cover;*/
+    background: url("../img/Image 1.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
     height: 100vh;
 }
 span {
     display: flex;
     flex-direction: row;
+}
+input{
+    color: #fff;
+    font-size: 12px;
 }
 
 
