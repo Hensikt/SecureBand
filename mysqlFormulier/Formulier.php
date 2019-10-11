@@ -23,9 +23,9 @@
             <input required type="text"   maxlength="128" class="input"      name="Achternaam" placeholder="Achternaam *">
             <input required type="text"   maxlength="48"  class="input"      name="Straat"     placeholder="Straat *">
             <input required type="number" maxlength="11"  class="input"      name="Huisnummer" placeholder="Huisnummer *">
-      <span><input required type="number" maxlength="6"  class="input next"  name="Postcode1"  placeholder="Postcode *">
+      <span><input required type="number" maxlength="6"   class="input next" name="Postcode1"  placeholder="Postcode *">
             <input required type="text"                   class="input next" name="Postcode2"  placeholder="Pcletters *"></span>
-            <input required type="text"   maxlength="24"    class="input"    name="Woonplaats" placeholder="Woonplaats *">
+            <input required type="text"   maxlength="24"  class="input"      name="Woonplaats" placeholder="Woonplaats *">
         </div>
         <div class="contactForm__extraInputFields">
             <input required type="text"   maxlength="125" class="input"      name="Email"          placeholder="Email Address *">
